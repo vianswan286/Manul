@@ -26,8 +26,9 @@ for soob in messages:
     m = 0
     while m < length:
         s_int = ''  # строка для нового числа
-        while m < length and ('0' <= soo[m] <= '9' or soo[m] == " " or soo[m] == "," or soo[m] == "." or soo[m] == "'" or soo[m] == "_" or soo[m] == "!"):
-            if not (soo[m] == " " or soo[m] == "," or soo[m] == "." or soo[m] == "'" or soo[m] == "_" or soo[m] == "!"):
+        separators = [' ', ',', '.', "'", '_', '!']
+        while m < length and ('0' <= soo[m] <= '9' or soo[m] in separators):
+            if not (soo[m] in separators):
                 s_int += soo[m]
             m += 1
         m += 1
