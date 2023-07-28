@@ -2,7 +2,7 @@ from pyrogram import *
 app = []
 messages = []
 max = 30528
-config = open("config.txt", encoding='utf8') # Программе требуется файл config.txt, сожержащий Имя аккаунта, его api_id и hash_api, на каждой строке новый аккаунт, хотя можно и просто указать значения программе
+config = open("config.txt", encoding='utf8') # Программе требуется файл config.txt, сожержащий Имя аккаунта, его api_id и hash_api, на каждой строке новый аккаунт, хотя можно и просто указать значения в программе
 chat = "manuls_LPR"
 for i in config:
     j = i.rstrip()
